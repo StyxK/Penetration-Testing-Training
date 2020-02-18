@@ -66,3 +66,66 @@ print(multiply(7,6))
 def square_root(x):
 	return x ** 0.5
 print(square_root(64))
+
+#Boolean expression (True or False) Must Be Capitalize!
+print("Boolean Expression : ")
+bool1 = True
+bool2 = 3*3 == 9
+bool3 = False
+bool4 = 3*3 != 9
+bool5 = "True"
+print(bool1,bool2,bool3,bool4)
+print(type(bool1))
+print(type(bool5))
+
+#Relational and Boolean Operations
+greater_than = 7 > 5
+less_than = 5 < 7
+greater_than_equal = 7 >= 7
+less_than_equal = 7<= 7
+print(greater_than,less_than,greater_than_equal,less_than_equal)
+
+test_and = (7>5) and (5<7)
+test_or = (7>5) or (5<7)
+test_not = not True
+print(test_and,test_or,test_not)
+
+#Condition statement
+print("Condotion Statement")
+def soda(money):
+	if money >= 2:
+		return "You've got yourself a soda!"
+	else:
+		return "No soda for you!"
+print(soda(3))
+print(soda(1))
+def alcohol(age,money):
+	if (age >= 20) and (money >= 5):
+		return "You've got tripsy"
+	elif (age < 20) and (money >= 5):
+		return "Nice try kid"
+	elif (age >= 20) and (money < 5):
+		return "Come back with money"
+	else:
+		return "You too poor and too young"
+print(alcohol(20,5))
+print(alcohol(19,5))
+print(alcohol(20,4))
+print(alcohol(19,4))
+
+#Lists
+print("Lists have brackets : ")
+movies = ["Harry Potter","Hang Over","The Purge"]
+print(movies[2])
+print(movies[0:3])
+print(movies[0:])
+print(movies[:1])
+print(movies[-1])
+print(len(movies))
+
+movies.append("Jaws")
+print(movies[0:])
+movies.pop()
+print(movies[0:])
+movies.pop(1)
+print(movies)
